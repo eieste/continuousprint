@@ -90,6 +90,12 @@ class CustomEvents(Enum):
         "Fires when bed cooldown is starting. Bed Cooldown is disabled by default - see the settings below.",
         "idle",
     )
+    COOLDOWN_ACTION = (
+        "continuousprint_cooldown_action",
+        "Bed Cooling Action",
+        "Fires every time when bed must bee cooled down.",
+        "idle",
+    )
     FINISH = (
         "continuousprint_finish",
         "Queue Finished",
