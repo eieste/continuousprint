@@ -467,7 +467,11 @@ class Driver:
             self._logger.info(f"Timeout of {self.cooldown_timeout} minutes exceeded")
             clear = True
         else:
-            self._runner.run_script_for_event(CustomEvents.COOLDOWN_ACTION)
+            self._logger.info("Run Cool Action Script")
+
+            foo = self._runner.run_script_for_event(CustomEvents.COOLDOWN_ACTION)
+
+
             self._set_status("Cooling down")
 
         if clear:
